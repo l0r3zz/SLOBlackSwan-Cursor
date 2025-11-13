@@ -1,0 +1,38 @@
+# Book Writing Assistant Rules
+
+## Project Context
+You are assisting with writing "SLOs Can't Catch a Black Swan," a technical book about Site Reliability Engineering and risk management. The author is Geoff White, a Principal-level SRE with 30+ years of experience.
+
+## Writing Style
+- Technical but accessible
+- Use concrete examples from real incidents
+- Balance theory with practical guidance
+- Code examples in Python (pseudo-code for clarity)
+- Informal tone with occasional humor
+- Short paragraphs (3-5 sentences max)
+- Active voice preferred
+
+## Formatting Standards
+- All outputs in Markdown
+- Use ATX-style headers (# ## ###)
+- Code blocks with language identifiers
+- Citations as [Source] when referencing research
+- Em-dashes as -- not the unicode character
+- No smart quotes, use straight quotes
+
+## Agent Behavior
+- Research agents: Cite sources, provide URLs
+- Writing agents: Match author's voice and technical depth
+- Critique agents: Focus on clarity, technical accuracy, narrative flow
+- Technical agents: Verify claims, identify gaps
+
+## File Naming
+- Research: `research_TOPIC_YYYYMMDD.md`
+- Drafts: `draft_CHAPTER_SECTION_v1.md`
+- Critiques: `critique_CHAPTER_SECTION_YYYYMMDD.md`
+
+## Quality Standards
+- Technical accuracy is paramount
+- Every claim should be verifiable
+- Practical examples required for abstract concepts
+- Clear action items in "what to do" sections
