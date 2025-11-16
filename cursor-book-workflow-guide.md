@@ -210,6 +210,36 @@ You are assisting with writing "SLOs Can't Catch a Black Swan," a technical book
 
 ## Phase 2: Agent Configuration
 
+### How to Select and Use Agents
+
+**Important:** Cursor doesn't have an "agent dropdown" menu. Instead, you select agents by referencing their `.mdc` files using the `@` syntax in the Agent chat.
+
+**Steps to use an agent:**
+
+1. **Open Agent chat:** Press `Cmd+L` (Mac) or `Ctrl+L` (Windows/Linux)
+
+2. **Reference the agent file:** Type `@` followed by the agent file path:
+   ```
+   @agents/research-agent.mdc
+   ```
+   
+   You can also use autocomplete: Type `@` and start typing the filename, then select it from the dropdown.
+
+3. **Give your prompt:** After referencing the agent, type your task or question. The agent's instructions from the `.mdc` file will be included in the context.
+
+4. **For agents with `alwaysApply: true`:** Once you reference the agent file once in a chat session, its instructions remain active for subsequent messages in that chat.
+
+**Example:**
+```
+@agents/writing-agent.mdc
+
+Draft a section on circuit breakers for Chapter 3.
+```
+
+**Switching agents:**
+- In the same chat: Just reference a different agent file with `@`
+- In a new chat: Press `Cmd+N` to open a new chat, then reference the agent
+
 ### Step 2.1: Research Agent (Perplexity)
 
 **Time: 15 minutes**
@@ -979,23 +1009,25 @@ When you open Scrivener, it will detect changes and prompt to import.
 
 1. **In Cursor, open Agent (Cmd+L)**
 
-2. **Select Research Agent from agent dropdown**
-
-3. **Give research prompt:**
+2. **Reference the Research Agent file using @ syntax:**
    ```
+   @agents/research-agent.mdc
+   
    Research recent black swan events in tech infrastructure from 2024-2025. 
    Focus on incidents that were genuinely unprecedented (not just rare). 
    Find 3-5 examples with postmortems.
    
    Save output to outputs/research/research_black_swans_2024_25.md
    ```
+   
+   **Alternative:** If the agent has `alwaysApply: true`, you can just reference it once, then use it in subsequent messages without repeating the @ reference.
 
 4. **Agent executes, creates research file**
 
-5. **Switch to Writing Agent**
-
-6. **Give writing prompt:**
+5. **Switch to Writing Agent** (in a new chat or by referencing it):
    ```
+   @agents/writing-agent.mdc
+   
    Using the research in outputs/research/research_black_swans_2024_25.md,
    draft a 1500-word section for Chapter 2 covering:
    - Brief intro to each incident
@@ -1027,12 +1059,16 @@ When you open Scrivener, it will detect changes and prompt to import.
 
 2. **Chat 1 - Writing Agent:**
    ```
+   @agents/writing-agent.mdc
+   
    Draft explanation of circuit breaker pattern for black jellyfish chapter.
    Target: 500 words, with Python pseudo-code example.
    ```
 
 3. **Chat 2 - Technical Agent (simultaneously):**
    ```
+   @agents/technical-agent.mdc
+   
    Review circuit breaker pattern best practices as of 2025.
    Identify any changes from older implementations.
    Note common mistakes.
@@ -1040,6 +1076,8 @@ When you open Scrivener, it will detect changes and prompt to import.
 
 4. **Chat 3 - Research Agent (simultaneously):**
    ```
+   @agents/research-agent.mdc
+   
    Find 2-3 real examples of circuit breaker failures or successes 
    from major tech companies. Need postmortems or blog posts.
    ```
@@ -1063,24 +1101,32 @@ When you open Scrivener, it will detect changes and prompt to import.
 
 1. **Initial draft (Writing Agent):**
    ```
+   @agents/writing-agent.mdc
+   
    Draft section on Grey Rhino detection strategies.
    Use outline from outputs/outlines/chapter3_outline.md
    ```
 
 2. **First critique (Critique Agent):**
    ```
+   @agents/critique-agent.mdc
+   
    Review outputs/drafts/draft_chapter3_grey_rhino_detection_v1.md
    Focus on: clarity, flow, actionability
    ```
 
 3. **Technical validation (Technical Agent):**
    ```
+   @agents/technical-agent.mdc
+   
    Validate technical claims in same draft.
    Check for outdated practices or missing context.
    ```
 
 4. **Refinement (Writing Agent):**
    ```
+   @agents/writing-agent.mdc
+   
    Revise draft_chapter3_grey_rhino_detection_v1.md based on:
    - outputs/critiques/critique_chapter3_grey_rhino_detection.md
    - outputs/critiques/validation_chapter3_grey_rhino_detection.md
@@ -1104,7 +1150,8 @@ When you open Scrivener, it will detect changes and prompt to import.
 1. Check agent .mdc file has correct `model:` in frontmatter
 2. Verify API keys in .env
 3. Restart Cursor
-4. In Agent chat, manually select model from dropdown
+4. In Agent chat, manually select model from model dropdown (top of chat)
+5. Make sure you're referencing the agent file with `@agents/research-agent.mdc` to load its configuration
 
 ### Issue: Files not saving to correct location
 
