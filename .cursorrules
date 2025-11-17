@@ -3,6 +3,40 @@
 ## Project Context
 You are assisting with writing "SLOs Can't Catch a Black Swan," a technical book about Site Reliability Engineering and risk management. The author is Geoff White, a Principal-level SRE with 30+ years of experience.
 
+## Author Persona
+**IMPORTANT:** Before writing any content, review the author's persona files in `persona/` directory:
+- `persona/professional-persona.md` - Professional background, expertise, technical experience
+- `persona/spiritual-persona.md` - Spiritual beliefs, worldview, values that inform writing
+- `persona/writing-voice.md` - Writing style preferences, tone, specific examples
+- Additional persona files may exist in `persona/` directory
+
+**External Resources:**
+- `persona/resources/` - Contains external documents referenced by persona files (resumes, writing samples, PDFs, etc.)
+- Persona files may contain markdown links to external resources in `persona/resources/` directory
+- **CRITICAL:** When reading persona files, you MUST also read any referenced external resources
+
+**All agents must:**
+- Read and understand persona files before generating content
+- **Follow markdown links** in persona files to external resources in `persona/resources/` directory
+- **Attempt to read referenced files** (PDFs, markdown, text files) when accessible
+- **Note the existence** of referenced files even if they cannot be directly read (e.g., `.docx` files)
+- Match the author's authentic voice, perspective, and values
+- Reflect both professional expertise and spiritual worldview when relevant
+- When persona files exist, they take precedence over general style guidelines
+
+**Reading Referenced Resources:**
+1. When you encounter markdown links in persona files (e.g., `[My Resume](resources/resume.pdf)`), attempt to read the referenced file
+2. For `.pdf`, `.md`, `.txt` files: Read the content directly
+3. For `.docx` files: Note that the file exists and its purpose (you may not be able to read it directly)
+4. Summarize key insights from referenced resources when relevant
+5. If a referenced file cannot be read, note its purpose based on the link text and context
+
+**To ensure persona context is included:**
+- When drafting content, explicitly reference persona files: `@persona/professional-persona.md @persona/spiritual-persona.md`
+- This will automatically include all referenced resources from those files
+- Consider both professional and spiritual perspectives in writing
+- Ensure tone, values, and worldview align with persona files
+
 ## Writing Style
 - Technical but accessible
 - Use concrete examples from real incidents
@@ -20,19 +54,252 @@ You are assisting with writing "SLOs Can't Catch a Black Swan," a technical book
 - Em-dashes as -- not the unicode character
 - No smart quotes, use straight quotes
 
-## Agent Behavior
-- Research agents: Cite sources, provide URLs
-- Writing agents: Match author's voice and technical depth
-- Critique agents: Focus on clarity, technical accuracy, narrative flow
-- Technical agents: Verify claims, identify gaps
+## Code Formatting Rules
 
-## File Naming
+### When Showing Existing Code
+Use code references with line numbers:
+```
+```startLine:endLine:filepath
+// code content here
+```
+```
+- Include at least 1 line of actual code
+- Truncate long sections with comments like `// ... more code ...`
+- Add clarifying comments for readability
+
+### When Proposing New Code
+Use standard markdown code blocks with language tag:
+```python
+for i in range(10):
+    print(i)
+```
+- Never include line numbers in code content
+- Never indent triple backticks (always start at column 0)
+- Use language identifiers for syntax highlighting
+
+### Code Block Guidelines
+- Comment code liberally
+- Show both anti-patterns and good patterns when applicable
+- Use Python pseudo-code for clarity in examples
+- Explain the "why" before showing code
+
+## File Organization
+
+### Directory Structure
+- `persona/` - Author persona files (professional, spiritual, writing voice)
+  - `persona/resources/` - External documents referenced by persona files (resumes, writing samples, PDFs, etc.)
+- `outputs/research/` - Research notes and findings
+- `outputs/drafts/` - Draft chapters and sections
+- `outputs/critiques/` - Editorial feedback and validations
+- `outputs/images/` - Visual assets
+- `staging/ready-for-scrivener/` - Curated outputs for import
+- `agents/` - AI agent configuration files (.mdc)
+- `scripts/` - Python automation helpers
+- `input/` - Source materials and incident data
+
+### File Naming Conventions
 - Research: `research_TOPIC_YYYYMMDD.md`
-- Drafts: `draft_CHAPTER_SECTION_v1.md`
+- Drafts: `draft_CHAPTER_SECTION_vN.md` (e.g., `draft_chapter2_black_swans_2024_v1.md`)
 - Critiques: `critique_CHAPTER_SECTION_YYYYMMDD.md`
+- Validations: `validation_CHAPTER_SECTION_YYYYMMDD.md`
+- Always include version numbers for drafts (v1, v2, etc.)
+
+### Saving Files
+- Always save to the appropriate `outputs/` subdirectory
+- Use full paths when specifying save location: `outputs/drafts/filename.md`
+- Never save to workspace root unless explicitly requested
+- Check if file exists before overwriting (increment version if needed)
+
+## Agent Behavior
+
+### Research Agents
+- Cite sources, provide URLs
+- Focus on 2020-2025 for current relevance
+- Prioritize authoritative sources: AWS blogs, Google SRE, academic papers, industry reports
+- Synthesize findings into structured notes
+- Identify gaps in knowledge
+
+### Writing Agents
+- **MUST READ persona files** in `persona/` directory before writing
+- Match author's authentic voice, perspective, and values from persona files
+- Reflect both professional expertise and spiritual worldview when relevant
+- Extract themes from research notes
+- Structure content logically with clear transitions
+- Include practical "what to do" sections
+- Every abstract concept needs a concrete example
+- Technical depth appropriate for Principal-level engineers
+- When persona files exist, they override general style guidelines
+
+### Critique Agents
+- Focus on clarity, technical accuracy, narrative flow
+- Provide specific, actionable feedback
+- Explain the "why" behind suggestions
+- Prioritize high-impact changes
+- Respect author's voice while improving readability
+
+### Technical Validation Agents
+- Verify claims, identify gaps
+- Check if practices are current (2025 best practices)
+- Flag outdated information
+- Validate code examples for correctness
+- Note edge cases and exceptions
+- Suggest authoritative sources for verification
+
+## Content Structure Guidelines
+
+### For Concept Chapters
+1. Hook: Real incident or provocative question
+2. The Problem: What challenge does this address?
+3. The Theory: Explain the concept
+4. Real-World Examples: 2-3 concrete cases
+5. Why This Matters: Practical implications
+6. What You Can Do: Action items
+
+### For Technical Sections
+- Lead with the "why"
+- Explain before showing code
+- Use Python pseudo-code for clarity
+- Comment code liberally
+- Show both anti-patterns and good patterns
+- Include error handling considerations
+
+### For Incident Analysis
+- Timeline of events
+- Root cause analysis
+- Why it qualifies as black swan (or doesn't)
+- Lessons learned
+- Practical takeaways for readers
 
 ## Quality Standards
 - Technical accuracy is paramount
 - Every claim should be verifiable
 - Practical examples required for abstract concepts
 - Clear action items in "what to do" sections
+- No buzzword bingo - use precise technical terms
+- Actionable takeaways in every section
+
+## Scrivener Integration Notes
+- All content should be Scrivener-ready markdown
+- Use standard markdown formatting (Scrivener converts automatically)
+- Avoid complex markdown extensions that Scrivener might not handle
+- Images should be referenced with relative paths or saved separately
+- RTF conversion available via `scripts/convert_to_rtf.py` if needed
+
+## Workflow Best Practices
+
+### Multi-Agent Workflows
+- Research → Draft → Critique → Validate is the standard flow
+- Agents can work in parallel for faster iteration
+- Always save intermediate outputs for version control
+- Reference previous outputs explicitly in prompts
+
+### Version Control
+- Always increment version numbers for drafts (v1, v2, v3)
+- Keep previous versions unless explicitly asked to overwrite
+- Document changes between versions in comments or commit messages
+
+### Cost Management Reminders
+- Use Claude Haiku for initial drafts when appropriate
+- Use Claude Sonnet for final polish and complex reasoning
+- Use GPT-4o-mini for quick critiques when full GPT-4o isn't needed
+- Batch operations when possible to reduce per-request overhead
+- Reuse research across multiple drafts to save context tokens
+
+## Common Patterns
+
+### When Drafting from Research
+1. Read and extract key themes from research file
+2. Identify 2-3 best examples for illustration
+3. Structure content logically (see Content Structure Guidelines)
+4. Draft prose matching author voice
+5. Include code examples where helpful
+6. Add "what this means for you" practical guidance
+
+### When Revising Based on Critique
+1. Review critique feedback carefully
+2. Prioritize high-impact changes first
+3. Address technical accuracy issues immediately
+4. Improve clarity and flow as secondary priority
+5. Increment version number (v1 → v2, etc.)
+6. Document what changed in the new version
+
+### When Validating Technical Content
+1. Verify all technical claims against authoritative sources
+2. Check if practices are current (2025 standards)
+3. Identify missing context or prerequisites
+4. Flag outdated information
+5. Validate code examples for correctness
+6. Note edge cases and exceptions
+
+## Error Handling
+
+### If File Path Doesn't Exist
+- Create the directory structure if it's a standard path (outputs/drafts, etc.)
+- Ask for clarification if the path is unusual
+
+### If Context Window Exceeded
+- Break large tasks into smaller chunks
+- Reference specific sections rather than entire files
+- Use `@file` mentions to include only relevant files
+
+### If Agent Output Quality Is Poor
+- Be more explicit about requirements
+- Reference `.cursorrules` explicitly
+- Provide examples of desired output style
+- Break complex tasks into simpler steps
+
+## Special Instructions
+
+### When Working with Incident Data
+- Respect confidentiality of real incidents
+- Use publicly available postmortems and reports
+- When using hypotheticals, clearly label them as such
+- Balance technical detail with readability
+
+### When Citing Sources
+- Use format: [Source Name] or [Source Name - URL]
+- Include publication dates when relevant
+- Prioritize recent sources (2020-2025) but include historical context when needed
+- Verify URLs are accessible
+
+### When Creating Code Examples
+- Prefer Python pseudo-code for clarity
+- Comment liberally to explain intent
+- Show both what NOT to do and what TO do when teaching patterns
+- Include error handling considerations
+- Make examples relevant to SRE/operations context
+
+## Output Expectations
+
+### Research Outputs Should Include
+- Summary (2-3 sentence overview)
+- Key findings with sources
+- Relevant quotes
+- Gaps identified
+- Recommended next steps
+
+### Draft Outputs Should Include
+- Proper markdown formatting
+- Clear section headers
+- Concrete examples
+- Code examples where appropriate
+- Action items or takeaways
+
+### Critique Outputs Should Include
+- Overall assessment
+- Strengths identified
+- Specific areas for improvement with line references
+- Priority actions
+- Questions for author if needed
+
+### Validation Outputs Should Include
+- Claims verified ✓
+- Claims requiring revision ⚠️
+- Missing context 📝
+- Outdated information 🕐
+- Code review findings 💻
+- Additional research needed 🔍
+
+---
+
+Remember: The goal is to assist Geoff in writing a high-quality technical book. Technical accuracy, practical relevance, and maintaining the author's voice are all equally important. When in doubt, prioritize accuracy and clarity over speed.

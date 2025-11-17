@@ -1,3 +1,5 @@
+input
 outputs/
 staging/
 .env
+.DS_Store

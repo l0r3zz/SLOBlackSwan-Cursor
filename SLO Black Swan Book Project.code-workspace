@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "SLOBlackSwan-Cursor",
+			"path": "."
+		},
+		{
+			"name": "Scrivener Input",
+			"path": "/Users/geoffwhite/Desktop/Dropbox/GEN-AI/SLO-BLACKSWAN/Scrivener-input"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.DS_Store": true
+		},
+		"workbench.sideBar.location": "left",
+		"workbench.panel.defaultLocation": "bottom",
+		"workbench.startupEditor": "welcomePage",
+		"explorer.compactFolders": false,
+		"workbench.editor.showTabs": "multiple"
+	}
+}
+

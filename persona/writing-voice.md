@@ -10,8 +10,12 @@ Intelligent, yet "snappy" I'm proud to have spent my formative years in New York
 
 ## Writing Samples
 
-- [LinkedIn-Information Flow](https://www.linkedin.com/pulse/unwritten-laws-information-flow-why-culture-hardest-system-white-7jxvc)
-- [LinkedIn-Punchcards2Prompts](https://www.linkedin.com/pulse/from-punched-cards-prompts-rediscovering-engineering-through-white-el5pc)
-- [LinkedIn-CloudForgot](https://www.linkedin.com/pulse/day-cloud-forgot-itself-geoff-white-gviqc)
-- [LinkedIn-SRE-Flight](https://www.linkedin.com/pulse/long-before-sres-were-flight-controllers-geoff-white)
-- [SRE2AUX](resources/SRE2AUX%20How%20Flight%20Controllers%20were%20the%20first%20SREs.pdf)
+### Local Resources (Agents can read these)
+- [SRE2AUX: How Flight Controllers were the first SREs](resources/SRE2AUX How Flight Controllers were the first SREs.pdf)
+
+### External References (Agents cannot access these directly)
+Note: These are external LinkedIn articles. To make them accessible to agents, download as PDFs and place in `resources/` directory:
+- [LinkedIn-Information Flow](resources/LinkedIn-unwritten-law-of-information-flow.pdf) - "Unwritten Laws of Information Flow: Why Culture is the Hardest System to Change"
+- [LinkedIn-Punchcards2Prompts](resources/LinkedIN-punchcards2prompts.pdf) - "From Punched Cards to Prompts: Rediscovering Engineering Through AI"
+- [LinkedIn-CloudForgot](resources/LinkedIn-cloud-forgot-to-be-a-cloud.pdf) - "The Day the Cloud Forgot Itself"
+
