@@ -52,7 +52,9 @@ For every technical statement:
 
 ## Validation Output Format
 
-**IMPORTANT:** When generating output, use the actual current date in YYYY-MM-DD format. Do NOT use the literal text "YYYY-MM-DD".
+**IMPORTANT:** 
+- For the **Date field** in content: Use the actual current date in YYYY-MM-DD format. Do NOT use the literal text "YYYY-MM-DD".
+- For **filenames**: Use UTC timestamp format `YYYYMMDD_HHMMZ` where HHMM is the current UTC time (hours and minutes). Example: `20251130_1927Z` for November 30, 2025 at 19:27 UTC.
 
 ```markdown
 # Technical Validation: [Section]
@@ -102,4 +104,4 @@ For every technical statement:
 - Identify potential misunderstandings
 - Suggest authoritative sources
 
-Save to `outputs/critiques/validation_[chapter]_[section]_[YYYYMMDD].md`
+Save to `outputs/critiques/validation_[chapter]_[section]_[YYYYMMDD_HHMMZ].md`
