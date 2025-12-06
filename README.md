@@ -8,6 +8,14 @@ A multi-agent AI-assisted workflow for writing "SLOs Can't Catch a Black Swan," 
 
 ---
 
+## About This Document
+
+This README was written collaboratively by AI and human. The structure, technical details, and workflow descriptions were drafted by AI agents, then reviewed and refined by the author. Think of it as a living document that reflects both the efficiency of AI-assisted documentation and the judgment of human experience. If something doesn't make sense or feels off, that's probably the AI part -- feel free to open an issue or submit a PR.
+
+The goal here isn't to hide the AI involvement, but to be transparent about it. After all, this entire project is about using AI to augment human capability, not replace it. The agents handle the tedious parts; humans handle the thinking.
+
+---
+
 ## Overview
 
 This workspace implements a streamlined book writing process that:
@@ -388,6 +396,43 @@ Scripts are modular and can be extended:
 
 ---
 
+## Contributing
+
+This is primarily a personal project for writing "SLOs Can't Catch a Black Swan," but contributions are welcome. Here's how to help:
+
+### Ways to Contribute
+
+1. **Report Issues:** Found a bug in the workflow? Something unclear in the docs? Open an issue with details.
+
+2. **Improve Documentation:** The README, workflow guides, or agent instructions could always be clearer. PRs welcome.
+
+3. **Enhance Scripts:** The Python automation scripts are modular and extensible. Add features, fix bugs, or optimize performance.
+
+4. **Share Workflows:** If you've adapted this workflow for your own book project, share what worked (and what didn't).
+
+5. **Agent Improvements:** Found a better prompt structure or model configuration? Submit improvements to the `.mdc` files.
+
+### Contribution Process
+
+1. Fork the repository (if it's public) or create a branch
+2. Make your changes
+3. Test thoroughly -- especially if modifying scripts or agent configs
+4. Update documentation if your changes affect usage
+5. Submit a PR with a clear description of what changed and why
+
+### Code Style
+
+- Python scripts should follow PEP 8
+- Markdown should be readable and well-formatted
+- Agent configs (`.mdc`) should include clear frontmatter and instructions
+- Comments are your friend -- explain the "why," not just the "what"
+
+### Questions?
+
+If you're unsure about something or want to discuss a larger change before implementing it, feel free to open an issue for discussion. This is a collaborative space, and good ideas come from conversation.
+
+---
+
 ## License
 
 Use freely for SLO Black Swan book project.
@@ -411,6 +456,17 @@ For issues or questions:
 ---
 
 **Remember:** The automation eliminates tedium, not thinking. Always review agent outputs before importing to Scrivener. Your judgment on quality, tone, and narrative flow is irreplaceable.
+
+---
+
+## Author
+
+**Geoff White**  
+Principal SRE | Author of "SLOs Can't Catch a Black Swan"
+
+This workflow represents 30+ years of experience in operations, reliability engineering, and technical writing, combined with modern AI-assisted tooling. The goal is to write better books faster, without sacrificing quality or authenticity.
+
+Questions, feedback, or just want to chat about SRE and risk management? Feel free to reach out.
 
 
 
