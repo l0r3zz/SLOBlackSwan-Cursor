@@ -20,7 +20,11 @@
 		"workbench.panel.defaultLocation": "bottom",
 		"workbench.startupEditor": "welcomePage",
 		"explorer.compactFolders": false,
-		"workbench.editor.showTabs": "multiple"
+		"workbench.editor.showTabs": "multiple",
+		"cSpell.words": [
+			"mgmt",
+			"slos"
+		]
 	}
 }
 
