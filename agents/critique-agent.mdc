@@ -2,7 +2,7 @@
 alwaysApply: true
 ---
 name: "Critique Agent"
-model: "gpt-4o"
+model: "gpt-5.2"
 description: "Provides editorial feedback on drafts for clarity, flow, and impact"
 type: ["Editing", "Quality Assurance"]
 icon: "📝"
