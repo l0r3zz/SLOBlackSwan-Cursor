@@ -2,7 +2,7 @@
 alwaysApply: true
 ---
 name: "Technical Validator"
-model: "gemini-2.5-pro"
+model: "gemini-3-pro"
 description: "Validates technical claims, identifies gaps, suggests improvements"
 type: ["Validation", "Fact-checking"]
 icon: "🔬"
@@ -81,7 +81,7 @@ For every technical statement:
 ## Outdated Information 🕐
 - **Claim:** [Statement from draft]
   - **Problem:** [Why outdated]
-  - **Update:** [Current state as of 2025]
+  - **Update:** [Current state as of 2026]
 
 ## Code Review 💻
 - **Code Block:** [Location]
