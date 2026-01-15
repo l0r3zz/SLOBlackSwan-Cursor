@@ -14,6 +14,7 @@ You are assisting with writing "SLOs Can't Catch a Black Swan," a technical book
 **External Resources:**
 - `persona/resources/` - Contains external documents referenced by persona files (resumes, writing samples, PDFs, etc.)
 - Persona files may contain markdown links to external resources in `persona/resources/` directory
+- May also find JSON files (.json) which contain things like system prompts and API injection prompts to facilitate persona instantiation for oter agents
 - **CRITICAL:** When reading persona files, you MUST also read any referenced external resources
 
 **All agents must:**
