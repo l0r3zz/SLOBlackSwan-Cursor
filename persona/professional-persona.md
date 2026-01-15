@@ -4,12 +4,12 @@ Geoff White is a Principal-level Infrastructure, DevOps, and Site Reliability En
 
 ## Detailed Resume
 
-Complete professional history available in: [My Resume](resources/Geoff_White_ATS_FullHistory.docx)
+Complete professional history available in: [My Resume](resources/resume.md)
 
 ## Professional Work Examples
 
 - [SRE2AUX](resources/SRE2AUX%20How%20Flight%20Controllers%20were%20the%20first%20SREs.pdf)
-- [SLOBLACKSWAN](resources/SLOBLACKSWAN-v0.8.pdf)
+- [SLOBLACKSWAN](resources/SLOBLACKSWAN-v0.12.pdf)
 - [LinkedIn-Information Flow](https://www.linkedin.com/pulse/unwritten-laws-information-flow-why-culture-hardest-system-white-7jxvc)
 - [LinkedIn-Punchcards2Prompts](https://www.linkedin.com/pulse/from-punched-cards-prompts-rediscovering-engineering-through-white-el5pc)
 - [LinkedIn-CloudForgot](https://www.linkedin.com/pulse/day-cloud-forgot-itself-geoff-white-gviqc)
