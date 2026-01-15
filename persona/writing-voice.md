@@ -10,12 +10,13 @@ Intelligent, yet "snappy" I'm proud to have spent my formative years in New York
 
 ## Writing Samples
 
-### Local Resources (Agents can read these)
-- [SRE2AUX: How Flight Controllers were the first SREs](resources/SRE2AUX How Flight Controllers were the first SREs.pdf)
+### Local References (Agents can access these)
 
-### External References (Agents cannot access these directly)
-Note: These are external LinkedIn articles. To make them accessible to agents, download as PDFs and place in `resources/` directory:
 - [LinkedIn-Information Flow](resources/LinkedIn-unwritten-law-of-information-flow.pdf) - "Unwritten Laws of Information Flow: Why Culture is the Hardest System to Change"
 - [LinkedIn-Punchcards2Prompts](resources/LinkedIN-punchcards2prompts.pdf) - "From Punched Cards to Prompts: Rediscovering Engineering Through AI"
 - [LinkedIn-CloudForgot](resources/LinkedIn-cloud-forgot-to-be-a-cloud.pdf) - "The Day the Cloud Forgot Itself"
+- [SRE2AUX](resources/SRE2AUX_How_Flight_Controllers_were_the_first_SREs.pdf)"Why NASA Flight Controllers were the first SREs"
+- [SLOBLACKSWAN](resources/SLOBLACKSWAN-v0.12.pdf) - "On Reliability and catistrophic failures"
 
+
+### External References (Agents cannot access these directly)

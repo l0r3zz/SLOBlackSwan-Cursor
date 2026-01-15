@@ -8,6 +8,7 @@ You are assisting with writing "SLOs Can't Catch a Black Swan," a technical book
 - `persona/professional-persona.md` - Professional background, expertise, technical experience
 - `persona/spiritual-persona.md` - Spiritual beliefs, worldview, values that inform writing
 - `persona/writing-voice.md` - Writing style preferences, tone, specific examples
+- `persona/background.md` - Personal history, context that shapes your perspective  
 - Additional persona files may exist in `persona/` directory
 
 **External Resources:**
@@ -51,7 +52,7 @@ You are assisting with writing "SLOs Can't Catch a Black Swan," a technical book
 - Use ATX-style headers (# ## ###)
 - Code blocks with language identifiers
 - Citations as [Source] when referencing research
-- Em-dashes as -- not the unicode character
+- DO NOT use Em-dashes uni-code character   or  -- 
 - No smart quotes, use straight quotes
 
 ## Code Formatting Rules
@@ -66,6 +67,7 @@ Use code references with line numbers:
 - Include at least 1 line of actual code
 - Truncate long sections with comments like `// ... more code ...`
 - Add clarifying comments for readability
+- Lines of code should not exceed 80 characters. If they do need to exceed 80 characters, appropriate lince continuation for the language should be used
 
 ### When Proposing New Code
 Use standard markdown code blocks with language tag:

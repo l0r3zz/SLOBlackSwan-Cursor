@@ -1,11 +1,14 @@
 # Persona Resources
 
-This directory contains external documents referenced by persona files, such as:
+This file should be read by an agent to get the background structure of this resources directory.
 
-- **Resume/CV** - Professional background and experience (`resume.docx`, `cv.pdf`, etc.)
+This directory contains additional documents referenced by persona files, such as:
+
+- **Resume/CV** - Professional background and experience (`resume.md`, `cv.pdf`, etc.)
 - **Writing Samples** - Examples of your writing style (`.pdf`, `.md`, `.docx`)
 - **Portfolio Pieces** - Published articles, blog posts, technical documents
 - **Reference Materials** - Documents that inform your perspective or expertise
+- **JSON persona files** (`professional-persona_prompts.json`, `spiratual_persona_prompts   .json`)
 
 ## Purpose
 
@@ -24,14 +27,14 @@ In your persona `.md` files, reference resources using relative markdown links:
 ```markdown
 ## Professional Background
 
-For detailed professional experience, see: [My Resume](resources/resume.docx)
+For detailed professional experience, see: [My Resume](resources/resume.md)
 
 ## Writing Style Examples
 
 Example writing samples demonstrating my voice:
-- [Technical Blog Post 2024](resources/blog-post-example.pdf)
-- [Conference Talk Transcript](resources/conference-talk-2023.pdf)
-- [Published Article](resources/published-article.pdf)
+- [Technical Blog Post 2025](resources/LinkedIn-cloud-forgot-to-be-a-cloud.pdf)
+- [Conference Talk Transcript](persona/resources/What IS SRE-revised.pdf)
+- [Published Article](resources/SRE2AUX_How_Flight_Controllers_were_the_first_SREs.pdf)
 ```
 
 ### Descriptive References
@@ -41,7 +44,7 @@ When referencing files that agents may not be able to directly read (like `.docx
 ```markdown
 ## Professional Experience
 
-My complete resume is available in [resources/resume.docx](resources/resume.docx). 
+My complete resume is available in [resources/resume.md](resources/resume.md). 
 Key highlights relevant to this book include:
 - 30+ years in SRE and system reliability
 - Experience with [specific technology/systems]
@@ -69,7 +72,7 @@ Organize resources logically:
 ```
 persona/resources/
 ├── professional/
-│   ├── resume.docx
+│   ├── resume.md
 │   ├── cv.pdf
 │   └── portfolio-samples/
 ├── writing-samples/

@@ -1,4 +1,4 @@
-# Spiritual Resume of Geoff White
+# Spiritual Persona of Geoff White
 
 ## Italy and Europe
 ### Olivetti
@@ -24,38 +24,30 @@ Courses in:
 ### Golden Temple Conscious Cookery
 First exposure to 3HO, vegitarian cooking Kundfalini Yoga (1971)
 
-### Baltimore Polytechnic Institute !975) B course Engineering
-- Math through trig, college algebra, Geometry, Analytic Geometry,
-- Engineering Design
-- Computer Programming
-
-### Johns Hopkins University
-- Models and Simulations
-- Logic Design
-- Also first exposure to UNIX and first C program (money.c)
-
-### Worcester Polytechnic Institute
 
 ### est Earhard Seminar Training (May 1979)
 Extensive follow-on seminars of life coaching
-6-day course
-seminars: be here now, self expression, about sex
-Communication workshop
-GSLP (did not complete)Logistics (assistance) 
-the (est) forum
+- 6-day course
+- seminars: be here now, self expression, about sex
+- Communication workshop
+- GSLP (did not complete)
+- Logistics (assistance) 
+- the (est) forum
+
+### Landmark 
+- Landmark Forum
+- Wisdom Course
+- Leadership Course
+### Leadership Course (2016) Abu Dhabi
 
 ### Patricia Sun
-numerous workshops
-trip to Ireland
+- numerous workshops
+- trip to Ireland
+
 ### Men, Sex and Power
 
 ### Reiki 
-REki Master
-### Landmark
-the forum
-Wisdom Course
-
-### Leadership Course (2016) Abu Dhabi
+Reki Master
 
 ### 3HO
 Teacher training

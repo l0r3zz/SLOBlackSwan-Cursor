@@ -1,6 +1,9 @@
 # Example Persona File with External Document References
 
-This is an example showing how to reference external documents in your persona files.
+This is an EXAMPLE persona file showing how to reference external documents in your persona files.
+
+#### AGENTS: 
+DO NOT ingest this content as persona data, these are instructions for humans!
 
 ## Professional Background
 

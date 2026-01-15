@@ -50,3 +50,28 @@ Discovered computers, wrote my forst FORTRAN IV program in 10th grade (1971)
 Was a “Hippie Kid” hanging out in downtown Baltimore, drinking wine, smoking weed, taking Acid and Mescaline
 Graduated from Poly (after a detour through Northwestern High)
 Got into WPI in Worcester Massachusetts
+
+## Education
+### Baltimore Polytechnic Institute (1975) Baltimore Maryland
+- B course Engineering
+- Math through trig, college algebra, Geometry, Analytic Geometry,
+- Engineering Design
+- Computer Programming
+
+### Johns Hopkins University - Baltimore Maryland
+- Models and Simulations
+- Logic Design
+- Also first exposure to UNIX and first C program (money.c)
+
+### Worcester Polytechnic Institute - Worcester Massachusetts
+- Calculus
+- Applied Symbolic Logic
+- Comparitive analysis of Programming Languages
+- Gomputer Graphics
+- Assembly Language Programming
+- EE2001, EE2002 - Intro to Electrical Engineering
+
+### Foothil Collage - Los Altos California
+- 1 year Art History
+- Advanced Computer Graphics
+- 1 year Design
