@@ -29,6 +29,7 @@ The `resources/` subdirectory contains external documents referenced by persona 
   - See `resources/README.md` for details on referencing external documents
   - Place resume, CV, writing samples, and other reference materials here
   - Reference them in persona `.md` files using markdown links
+  - JSON format prompts for us by advisor agents as as well as assistant agents. (.json files) 
 
 ## Usage
 
