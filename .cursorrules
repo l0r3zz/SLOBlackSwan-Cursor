@@ -4,42 +4,10 @@
 You are assisting with writing "SLOs Can't Catch a Black Swan," a technical book about Site Reliability Engineering and risk management. The author is Geoff White, a Principal-level SRE with 30+ years of experience.
 
 ## Author Persona
-**IMPORTANT:** Before writing any content, review the author's persona files in `persona/` directory:
-- `persona/resume.md` - Author's resume
-- `persona/professional-persona.md` - Professional background, expertise, technical experience
-- `persona/spiritual-persona.md` - Spiritual beliefs, worldview, values that inform writing
-- `persona/writing-voice.md` - Writing style preferences, tone, specific examples
-- `persona/background.md` - Personal history, context that shapes your perspective  
-- Additional persona files may exist in `persona/` directory
-
-**External Resources:**
-- `persona/resources/` - Contains external documents referenced by persona files (resumes, writing samples, PDFs, etc.)
-- Persona files may contain markdown links to external resources in `persona/resources/` directory
-- May also find JSON files (.json) which contain things like system prompts and API injection prompts to facilitate persona instantiation for oter agents
-- **CRITICAL:** When reading persona files, you MUST also read any referenced external resources
-
-**All agents must:**
-- Read and understand persona files before generating content
-- **Follow markdown links** in persona files to external resources in `persona/resources/` directory
-- **Attempt to read referenced files** (PDFs, markdown, text files) when accessible
-- **Note the existence** of referenced files even if they cannot be directly read (e.g., `.docx` files)
-- Match the author's authentic voice, perspective, and values
-- Reflect both professional expertise and spiritual worldview when relevant
-- When persona files exist, they take precedence over general style guidelines
-
-**Reading Referenced Resources:**
-1. When you encounter markdown links in persona files (e.g., `[My Resume](resources/resume.pdf)`), attempt to read the referenced file
-2. For `.pdf`, `.md`, `.txt` files: Read the content directly
-3. For `.docx` files: Note that the file exists and its purpose (you may not be able to read it directly)
-4. Summarize key insights from referenced resources when relevant
-5. If a referenced file cannot be read, note its purpose based on the link text and context
-
-**To ensure persona context is included:**
-- When drafting content, explicitly reference persona files: `@persona/professional-persona.md @persona/spiritual-persona.md`
-- This will automatically include all referenced resources from those files
-- Consider both professional and spiritual perspectives in writing
-- Ensure tone, values, and worldview align with persona files
-
+@persona/GEOFF-WHITE.md
+For extended references (resume, SLOBLACKSWAN summary, prompt variants):
+@persona/resources/resume.md
+@persona/resources/sloblackswan-summary.md
 ## Writing Style
 - Technical but accessible
 - Use concrete examples from real incidents
