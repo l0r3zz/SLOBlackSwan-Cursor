@@ -5,6 +5,7 @@ You are assisting with writing "SLOs Can't Catch a Black Swan," a technical book
 
 ## Author Persona
 **IMPORTANT:** Before writing any content, review the author's persona files in `persona/` directory:
+- `persona/resume.md` - Author's resume
 - `persona/professional-persona.md` - Professional background, expertise, technical experience
 - `persona/spiritual-persona.md` - Spiritual beliefs, worldview, values that inform writing
 - `persona/writing-voice.md` - Writing style preferences, tone, specific examples
